@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEFAF11D196169780088CD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF11C196169780088CD1D /* Foundation.framework */; };
+		CEFAF11F196169780088CD1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF11E196169780088CD1D /* CoreGraphics.framework */; };
+		CEFAF121196169780088CD1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF120196169780088CD1D /* UIKit.framework */; };
+		CEFAF127196169780088CD1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFAF125196169780088CD1D /* InfoPlist.strings */; };
+		CEFAF129196169780088CD1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF128196169780088CD1D /* main.m */; };
+		CEFAF12D196169780088CD1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF12C196169780088CD1D /* AppDelegate.m */; };
+		CEFAF12F196169780088CD1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFAF12E196169780088CD1D /* Images.xcassets */; };
+		CEFAF136196169780088CD1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF135196169780088CD1D /* XCTest.framework */; };
+		CEFAF137196169780088CD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF11C196169780088CD1D /* Foundation.framework */; };
+		CEFAF138196169780088CD1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF120196169780088CD1D /* UIKit.framework */; };
+		CEFAF140196169780088CD1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFAF13E196169780088CD1D /* InfoPlist.strings */; };
+		CEFAF142196169780088CD1D /* PFPassingParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF141196169780088CD1D /* PFPassingParametersTests.m */; };
+		CEFAF14D1961699F0088CD1D /* PFRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF14C1961699F0088CD1D /* PFRootViewController.m */; };
+		CEFAF17A196169FA0088CD1D /* PFGetBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF151196169FA0088CD1D /* PFGetBlock.m */; };
+		CEFAF17B196169FA0088CD1D /* PFSetBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF153196169FA0088CD1D /* PFSetBlock.m */; };
+		CEFAF17C196169FA0088CD1D /* PFGetDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF156196169FA0088CD1D /* PFGetDelegate.m */; };
+		CEFAF17D196169FA0088CD1D /* PFSetDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF158196169FA0088CD1D /* PFSetDelegate.m */; };
+		CEFAF17E196169FA0088CD1D /* PFGetExternVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF15B196169FA0088CD1D /* PFGetExternVariables.m */; };
+		CEFAF17F196169FA0088CD1D /* PFSetExternVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF15D196169FA0088CD1D /* PFSetExternVariables.m */; };
+		CEFAF180196169FA0088CD1D /* PFGetNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF160196169FA0088CD1D /* PFGetNotification.m */; };
+		CEFAF181196169FA0088CD1D /* PFNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF162196169FA0088CD1D /* PFNotification.m */; };
+		CEFAF182196169FA0088CD1D /* PFNotificationWithMarco.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF164196169FA0088CD1D /* PFNotificationWithMarco.m */; };
+		CEFAF183196169FA0088CD1D /* PFSetNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF166196169FA0088CD1D /* PFSetNotification.m */; };
+		CEFAF184196169FA0088CD1D /* PFGetNSUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF169196169FA0088CD1D /* PFGetNSUserDefaults.m */; };
+		CEFAF185196169FA0088CD1D /* PFSetNSUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF16B196169FA0088CD1D /* PFSetNSUserDefaults.m */; };
+		CEFAF186196169FA0088CD1D /* PFGetProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF16E196169FA0088CD1D /* PFGetProperty.m */; };
+		CEFAF187196169FA0088CD1D /* PFSetProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF170196169FA0088CD1D /* PFSetProperty.m */; };
+		CEFAF188196169FA0088CD1D /* PFGetSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF173196169FA0088CD1D /* PFGetSingleton.m */; };
+		CEFAF189196169FA0088CD1D /* PFSetSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF175196169FA0088CD1D /* PFSetSingleton.m */; };
+		CEFAF18A196169FA0088CD1D /* PFSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF177196169FA0088CD1D /* PFSingleton.m */; };
+		CEFAF18B196169FA0088CD1D /* PFSingletonWithMarco.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF179196169FA0088CD1D /* PFSingletonWithMarco.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEFAF139196169780088CD1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFAF111196169780088CD1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFAF118196169780088CD1D;
+			remoteInfo = PFPassingParameters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEFAF119196169780088CD1D /* PFPassingParameters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFPassingParameters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFAF11C196169780088CD1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEFAF11E196169780088CD1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEFAF120196169780088CD1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEFAF124196169780088CD1D /* PFPassingParameters-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PFPassingParameters-Info.plist"; sourceTree = "<group>"; };
+		CEFAF126196169780088CD1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEFAF128196169780088CD1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEFAF12A196169780088CD1D /* PFPassingParameters-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PFPassingParameters-Prefix.pch"; sourceTree = "<group>"; };
+		CEFAF12B196169780088CD1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEFAF12C196169780088CD1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEFAF12E196169780088CD1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEFAF134196169780088CD1D /* PFPassingParametersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PFPassingParametersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFAF135196169780088CD1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEFAF13D196169780088CD1D /* PFPassingParametersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PFPassingParametersTests-Info.plist"; sourceTree = "<group>"; };
+		CEFAF13F196169780088CD1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEFAF141196169780088CD1D /* PFPassingParametersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFPassingParametersTests.m; sourceTree = "<group>"; };
+		CEFAF14B1961699E0088CD1D /* PFRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRootViewController.h; sourceTree = "<group>"; };
+		CEFAF14C1961699F0088CD1D /* PFRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRootViewController.m; sourceTree = "<group>"; };
+		CEFAF150196169FA0088CD1D /* PFGetBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetBlock.h; sourceTree = "<group>"; };
+		CEFAF151196169FA0088CD1D /* PFGetBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetBlock.m; sourceTree = "<group>"; };
+		CEFAF152196169FA0088CD1D /* PFSetBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetBlock.h; sourceTree = "<group>"; };
+		CEFAF153196169FA0088CD1D /* PFSetBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetBlock.m; sourceTree = "<group>"; };
+		CEFAF155196169FA0088CD1D /* PFGetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetDelegate.h; sourceTree = "<group>"; };
+		CEFAF156196169FA0088CD1D /* PFGetDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetDelegate.m; sourceTree = "<group>"; };
+		CEFAF157196169FA0088CD1D /* PFSetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetDelegate.h; sourceTree = "<group>"; };
+		CEFAF158196169FA0088CD1D /* PFSetDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetDelegate.m; sourceTree = "<group>"; };
+		CEFAF15A196169FA0088CD1D /* PFGetExternVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetExternVariables.h; sourceTree = "<group>"; };
+		CEFAF15B196169FA0088CD1D /* PFGetExternVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetExternVariables.m; sourceTree = "<group>"; };
+		CEFAF15C196169FA0088CD1D /* PFSetExternVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetExternVariables.h; sourceTree = "<group>"; };
+		CEFAF15D196169FA0088CD1D /* PFSetExternVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetExternVariables.m; sourceTree = "<group>"; };
+		CEFAF15F196169FA0088CD1D /* PFGetNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetNotification.h; sourceTree = "<group>"; };
+		CEFAF160196169FA0088CD1D /* PFGetNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetNotification.m; sourceTree = "<group>"; };
+		CEFAF161196169FA0088CD1D /* PFNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFNotification.h; sourceTree = "<group>"; };
+		CEFAF162196169FA0088CD1D /* PFNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFNotification.m; sourceTree = "<group>"; };
+		CEFAF163196169FA0088CD1D /* PFNotificationWithMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFNotificationWithMarco.h; sourceTree = "<group>"; };
+		CEFAF164196169FA0088CD1D /* PFNotificationWithMarco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFNotificationWithMarco.m; sourceTree = "<group>"; };
+		CEFAF165196169FA0088CD1D /* PFSetNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetNotification.h; sourceTree = "<group>"; };
+		CEFAF166196169FA0088CD1D /* PFSetNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetNotification.m; sourceTree = "<group>"; };
+		CEFAF168196169FA0088CD1D /* PFGetNSUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetNSUserDefaults.h; sourceTree = "<group>"; };
+		CEFAF169196169FA0088CD1D /* PFGetNSUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetNSUserDefaults.m; sourceTree = "<group>"; };
+		CEFAF16A196169FA0088CD1D /* PFSetNSUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetNSUserDefaults.h; sourceTree = "<group>"; };
+		CEFAF16B196169FA0088CD1D /* PFSetNSUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetNSUserDefaults.m; sourceTree = "<group>"; };
+		CEFAF16D196169FA0088CD1D /* PFGetProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetProperty.h; sourceTree = "<group>"; };
+		CEFAF16E196169FA0088CD1D /* PFGetProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetProperty.m; sourceTree = "<group>"; };
+		CEFAF16F196169FA0088CD1D /* PFSetProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetProperty.h; sourceTree = "<group>"; };
+		CEFAF170196169FA0088CD1D /* PFSetProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetProperty.m; sourceTree = "<group>"; };
+		CEFAF172196169FA0088CD1D /* PFGetSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFGetSingleton.h; sourceTree = "<group>"; };
+		CEFAF173196169FA0088CD1D /* PFGetSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetSingleton.m; sourceTree = "<group>"; };
+		CEFAF174196169FA0088CD1D /* PFSetSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetSingleton.h; sourceTree = "<group>"; };
+		CEFAF175196169FA0088CD1D /* PFSetSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetSingleton.m; sourceTree = "<group>"; };
+		CEFAF176196169FA0088CD1D /* PFSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSingleton.h; sourceTree = "<group>"; };
+		CEFAF177196169FA0088CD1D /* PFSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSingleton.m; sourceTree = "<group>"; };
+		CEFAF178196169FA0088CD1D /* PFSingletonWithMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSingletonWithMarco.h; sourceTree = "<group>"; };
+		CEFAF179196169FA0088CD1D /* PFSingletonWithMarco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSingletonWithMarco.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFAF116196169780088CD1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFAF11F196169780088CD1D /* CoreGraphics.framework in Frameworks */,
+				CEFAF121196169780088CD1D /* UIKit.framework in Frameworks */,
+				CEFAF11D196169780088CD1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFAF131196169780088CD1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFAF136196169780088CD1D /* XCTest.framework in Frameworks */,
+				CEFAF138196169780088CD1D /* UIKit.framework in Frameworks */,
+				CEFAF137196169780088CD1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEFAF110196169780088CD1D = {
+			isa = PBXGroup;
+			children = (
+				CEFAF122196169780088CD1D /* PFPassingParameters */,
+				CEFAF13B196169780088CD1D /* PFPassingParametersTests */,
+				CEFAF11B196169780088CD1D /* Frameworks */,
+				CEFAF11A196169780088CD1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFAF11A196169780088CD1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF119196169780088CD1D /* PFPassingParameters.app */,
+				CEFAF134196169780088CD1D /* PFPassingParametersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFAF11B196169780088CD1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF11C196169780088CD1D /* Foundation.framework */,
+				CEFAF11E196169780088CD1D /* CoreGraphics.framework */,
+				CEFAF120196169780088CD1D /* UIKit.framework */,
+				CEFAF135196169780088CD1D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFAF122196169780088CD1D /* PFPassingParameters */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF12B196169780088CD1D /* AppDelegate.h */,
+				CEFAF12C196169780088CD1D /* AppDelegate.m */,
+				CEFAF14B1961699E0088CD1D /* PFRootViewController.h */,
+				CEFAF14C1961699F0088CD1D /* PFRootViewController.m */,
+				CEFAF12E196169780088CD1D /* Images.xcassets */,
+				CEFAF14E196169FA0088CD1D /* PFPassingParameters */,
+				CEFAF123196169780088CD1D /* Supporting Files */,
+			);
+			path = PFPassingParameters;
+			sourceTree = "<group>";
+		};
+		CEFAF123196169780088CD1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF124196169780088CD1D /* PFPassingParameters-Info.plist */,
+				CEFAF125196169780088CD1D /* InfoPlist.strings */,
+				CEFAF128196169780088CD1D /* main.m */,
+				CEFAF12A196169780088CD1D /* PFPassingParameters-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFAF13B196169780088CD1D /* PFPassingParametersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF141196169780088CD1D /* PFPassingParametersTests.m */,
+				CEFAF13C196169780088CD1D /* Supporting Files */,
+			);
+			path = PFPassingParametersTests;
+			sourceTree = "<group>";
+		};
+		CEFAF13C196169780088CD1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF13D196169780088CD1D /* PFPassingParametersTests-Info.plist */,
+				CEFAF13E196169780088CD1D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFAF14E196169FA0088CD1D /* PFPassingParameters */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF14F196169FA0088CD1D /* block */,
+				CEFAF154196169FA0088CD1D /* delegate */,
+				CEFAF159196169FA0088CD1D /* extern variables */,
+				CEFAF15E196169FA0088CD1D /* notification */,
+				CEFAF167196169FA0088CD1D /* NSUserDefaults */,
+				CEFAF16C196169FA0088CD1D /* property */,
+				CEFAF171196169FA0088CD1D /* singleton */,
+			);
+			path = PFPassingParameters;
+			sourceTree = "<group>";
+		};
+		CEFAF14F196169FA0088CD1D /* block */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF150196169FA0088CD1D /* PFGetBlock.h */,
+				CEFAF151196169FA0088CD1D /* PFGetBlock.m */,
+				CEFAF152196169FA0088CD1D /* PFSetBlock.h */,
+				CEFAF153196169FA0088CD1D /* PFSetBlock.m */,
+			);
+			path = block;
+			sourceTree = "<group>";
+		};
+		CEFAF154196169FA0088CD1D /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF155196169FA0088CD1D /* PFGetDelegate.h */,
+				CEFAF156196169FA0088CD1D /* PFGetDelegate.m */,
+				CEFAF157196169FA0088CD1D /* PFSetDelegate.h */,
+				CEFAF158196169FA0088CD1D /* PFSetDelegate.m */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		CEFAF159196169FA0088CD1D /* extern variables */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF15A196169FA0088CD1D /* PFGetExternVariables.h */,
+				CEFAF15B196169FA0088CD1D /* PFGetExternVariables.m */,
+				CEFAF15C196169FA0088CD1D /* PFSetExternVariables.h */,
+				CEFAF15D196169FA0088CD1D /* PFSetExternVariables.m */,
+			);
+			path = "extern variables";
+			sourceTree = "<group>";
+		};
+		CEFAF15E196169FA0088CD1D /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF15F196169FA0088CD1D /* PFGetNotification.h */,
+				CEFAF160196169FA0088CD1D /* PFGetNotification.m */,
+				CEFAF161196169FA0088CD1D /* PFNotification.h */,
+				CEFAF162196169FA0088CD1D /* PFNotification.m */,
+				CEFAF163196169FA0088CD1D /* PFNotificationWithMarco.h */,
+				CEFAF164196169FA0088CD1D /* PFNotificationWithMarco.m */,
+				CEFAF165196169FA0088CD1D /* PFSetNotification.h */,
+				CEFAF166196169FA0088CD1D /* PFSetNotification.m */,
+			);
+			path = notification;
+			sourceTree = "<group>";
+		};
+		CEFAF167196169FA0088CD1D /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF168196169FA0088CD1D /* PFGetNSUserDefaults.h */,
+				CEFAF169196169FA0088CD1D /* PFGetNSUserDefaults.m */,
+				CEFAF16A196169FA0088CD1D /* PFSetNSUserDefaults.h */,
+				CEFAF16B196169FA0088CD1D /* PFSetNSUserDefaults.m */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		CEFAF16C196169FA0088CD1D /* property */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF16D196169FA0088CD1D /* PFGetProperty.h */,
+				CEFAF16E196169FA0088CD1D /* PFGetProperty.m */,
+				CEFAF16F196169FA0088CD1D /* PFSetProperty.h */,
+				CEFAF170196169FA0088CD1D /* PFSetProperty.m */,
+			);
+			path = property;
+			sourceTree = "<group>";
+		};
+		CEFAF171196169FA0088CD1D /* singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CEFAF172196169FA0088CD1D /* PFGetSingleton.h */,
+				CEFAF173196169FA0088CD1D /* PFGetSingleton.m */,
+				CEFAF174196169FA0088CD1D /* PFSetSingleton.h */,
+				CEFAF175196169FA0088CD1D /* PFSetSingleton.m */,
+				CEFAF176196169FA0088CD1D /* PFSingleton.h */,
+				CEFAF177196169FA0088CD1D /* PFSingleton.m */,
+				CEFAF178196169FA0088CD1D /* PFSingletonWithMarco.h */,
+				CEFAF179196169FA0088CD1D /* PFSingletonWithMarco.m */,
+			);
+			path = singleton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEFAF118196169780088CD1D /* PFPassingParameters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFAF145196169780088CD1D /* Build configuration list for PBXNativeTarget "PFPassingParameters" */;
+			buildPhases = (
+				CEFAF115196169780088CD1D /* Sources */,
+				CEFAF116196169780088CD1D /* Frameworks */,
+				CEFAF117196169780088CD1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PFPassingParameters;
+			productName = PFPassingParameters;
+			productReference = CEFAF119196169780088CD1D /* PFPassingParameters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFAF133196169780088CD1D /* PFPassingParametersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFAF148196169780088CD1D /* Build configuration list for PBXNativeTarget "PFPassingParametersTests" */;
+			buildPhases = (
+				CEFAF130196169780088CD1D /* Sources */,
+				CEFAF131196169780088CD1D /* Frameworks */,
+				CEFAF132196169780088CD1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFAF13A196169780088CD1D /* PBXTargetDependency */,
+			);
+			name = PFPassingParametersTests;
+			productName = PFPassingParametersTests;
+			productReference = CEFAF134196169780088CD1D /* PFPassingParametersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFAF111196169780088CD1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = PFei_He;
+				TargetAttributes = {
+					CEFAF133196169780088CD1D = {
+						TestTargetID = CEFAF118196169780088CD1D;
+					};
+				};
+			};
+			buildConfigurationList = CEFAF114196169780088CD1D /* Build configuration list for PBXProject "PFPassingParameters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEFAF110196169780088CD1D;
+			productRefGroup = CEFAF11A196169780088CD1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFAF118196169780088CD1D /* PFPassingParameters */,
+				CEFAF133196169780088CD1D /* PFPassingParametersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEFAF117196169780088CD1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFAF127196169780088CD1D /* InfoPlist.strings in Resources */,
+				CEFAF12F196169780088CD1D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFAF132196169780088CD1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFAF140196169780088CD1D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFAF115196169780088CD1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFAF17A196169FA0088CD1D /* PFGetBlock.m in Sources */,
+				CEFAF180196169FA0088CD1D /* PFGetNotification.m in Sources */,
+				CEFAF184196169FA0088CD1D /* PFGetNSUserDefaults.m in Sources */,
+				CEFAF17B196169FA0088CD1D /* PFSetBlock.m in Sources */,
+				CEFAF183196169FA0088CD1D /* PFSetNotification.m in Sources */,
+				CEFAF187196169FA0088CD1D /* PFSetProperty.m in Sources */,
+				CEFAF18B196169FA0088CD1D /* PFSingletonWithMarco.m in Sources */,
+				CEFAF186196169FA0088CD1D /* PFGetProperty.m in Sources */,
+				CEFAF12D196169780088CD1D /* AppDelegate.m in Sources */,
+				CEFAF188196169FA0088CD1D /* PFGetSingleton.m in Sources */,
+				CEFAF129196169780088CD1D /* main.m in Sources */,
+				CEFAF17D196169FA0088CD1D /* PFSetDelegate.m in Sources */,
+				CEFAF14D1961699F0088CD1D /* PFRootViewController.m in Sources */,
+				CEFAF185196169FA0088CD1D /* PFSetNSUserDefaults.m in Sources */,
+				CEFAF18A196169FA0088CD1D /* PFSingleton.m in Sources */,
+				CEFAF182196169FA0088CD1D /* PFNotificationWithMarco.m in Sources */,
+				CEFAF17E196169FA0088CD1D /* PFGetExternVariables.m in Sources */,
+				CEFAF17F196169FA0088CD1D /* PFSetExternVariables.m in Sources */,
+				CEFAF189196169FA0088CD1D /* PFSetSingleton.m in Sources */,
+				CEFAF17C196169FA0088CD1D /* PFGetDelegate.m in Sources */,
+				CEFAF181196169FA0088CD1D /* PFNotification.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFAF130196169780088CD1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFAF142196169780088CD1D /* PFPassingParametersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEFAF13A196169780088CD1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFAF118196169780088CD1D /* PFPassingParameters */;
+			targetProxy = CEFAF139196169780088CD1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFAF125196169780088CD1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFAF126196169780088CD1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEFAF13E196169780088CD1D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFAF13F196169780088CD1D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEFAF143196169780088CD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEFAF144196169780088CD1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFAF146196169780088CD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFPassingParameters/PFPassingParameters-Prefix.pch";
+				INFOPLIST_FILE = "PFPassingParameters/PFPassingParameters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEFAF147196169780088CD1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFPassingParameters/PFPassingParameters-Prefix.pch";
+				INFOPLIST_FILE = "PFPassingParameters/PFPassingParameters-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEFAF149196169780088CD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PFPassingParameters.app/PFPassingParameters";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFPassingParameters/PFPassingParameters-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PFPassingParametersTests/PFPassingParametersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CEFAF14A196169780088CD1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PFPassingParameters.app/PFPassingParameters";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PFPassingParameters/PFPassingParameters-Prefix.pch";
+				INFOPLIST_FILE = "PFPassingParametersTests/PFPassingParametersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFAF114196169780088CD1D /* Build configuration list for PBXProject "PFPassingParameters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFAF143196169780088CD1D /* Debug */,
+				CEFAF144196169780088CD1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFAF145196169780088CD1D /* Build configuration list for PBXNativeTarget "PFPassingParameters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFAF146196169780088CD1D /* Debug */,
+				CEFAF147196169780088CD1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEFAF148196169780088CD1D /* Build configuration list for PBXNativeTarget "PFPassingParametersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFAF149196169780088CD1D /* Debug */,
+				CEFAF14A196169780088CD1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFAF111196169780088CD1D /* Project object */;
+}
