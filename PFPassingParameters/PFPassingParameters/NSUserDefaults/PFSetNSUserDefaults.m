@@ -7,6 +7,7 @@
 //
 
 #import "PFSetNSUserDefaults.h"
+#import "PFUserDefaults.h"
 
 @implementation PFSetNSUserDefaults
 
@@ -20,6 +21,11 @@
     
     //同步用户数据
     [[NSUserDefaults standardUserDefaults] synchronize];
+
+    //添加用户数据
+    [PFUserDefaults setObject:[NSString stringWithFormat:@"string"] forKey:@"string"];
+    [PFUserDefaults setObject:[NSArray arrayWithObjects:@"array", nil] forKey:@"array"];
+    [PFUserDefaults setObject:[NSDictionary dictionaryWithObjectsAndKeys:@"object", @"key", nil] forKey:@"dictionary"];
 }
 
 @end

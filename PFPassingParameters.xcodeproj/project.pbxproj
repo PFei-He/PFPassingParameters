@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2F53181964E0120015FF59 /* PFUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F53171964E0120015FF59 /* PFUserDefaults.m */; };
 		CEFAF11D196169780088CD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF11C196169780088CD1D /* Foundation.framework */; };
 		CEFAF11F196169780088CD1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF11E196169780088CD1D /* CoreGraphics.framework */; };
 		CEFAF121196169780088CD1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFAF120196169780088CD1D /* UIKit.framework */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE2F53161964E0120015FF59 /* PFUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFUserDefaults.h; sourceTree = "<group>"; };
+		CE2F53171964E0120015FF59 /* PFUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFUserDefaults.m; sourceTree = "<group>"; };
 		CEFAF119196169780088CD1D /* PFPassingParameters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFPassingParameters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFAF11C196169780088CD1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEFAF11E196169780088CD1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -273,6 +276,8 @@
 				CEFAF169196169FA0088CD1D /* PFGetNSUserDefaults.m */,
 				CEFAF16A196169FA0088CD1D /* PFSetNSUserDefaults.h */,
 				CEFAF16B196169FA0088CD1D /* PFSetNSUserDefaults.m */,
+				CE2F53161964E0120015FF59 /* PFUserDefaults.h */,
+				CE2F53171964E0120015FF59 /* PFUserDefaults.m */,
 			);
 			path = NSUserDefaults;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				CEFAF186196169FA0088CD1D /* PFGetProperty.m in Sources */,
 				CEFAF12D196169780088CD1D /* AppDelegate.m in Sources */,
 				CEFAF188196169FA0088CD1D /* PFGetSingleton.m in Sources */,
+				CE2F53181964E0120015FF59 /* PFUserDefaults.m in Sources */,
 				CEFAF129196169780088CD1D /* main.m in Sources */,
 				CEFAF17D196169FA0088CD1D /* PFSetDelegate.m in Sources */,
 				CEFAF14D1961699F0088CD1D /* PFRootViewController.m in Sources */,
@@ -617,6 +623,7 @@
 				CEFAF147196169780088CD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFAF148196169780088CD1D /* Build configuration list for PBXNativeTarget "PFPassingParametersTests" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +632,7 @@
 				CEFAF14A196169780088CD1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

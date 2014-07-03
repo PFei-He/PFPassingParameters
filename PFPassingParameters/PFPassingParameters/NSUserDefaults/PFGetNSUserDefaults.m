@@ -7,6 +7,7 @@
 //
 
 #import "PFGetNSUserDefaults.h"
+#import "PFUserDefaults.h"
 
 @implementation PFGetNSUserDefaults
 
@@ -17,17 +18,30 @@
     NSLog(@"==========NSUserDefaults==========:%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"array"]);
     NSLog(@"==========NSUserDefaults==========:%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"dictionary"]);
 
+    NSLog(@"==========PFUserDefaults==========:%@", [PFUserDefaults objectForKey:@"string"]);
+    NSLog(@"==========PFUserDefaults==========:%@", [PFUserDefaults objectForKey:@"array"]);
+    NSLog(@"==========PFUserDefaults==========:%@", [PFUserDefaults objectForKey:@"dictionary"]);
+
     //移除用户数据
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"string"];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"array"];
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"dictionary"];
-    
+
     //同步用户数据
     [[NSUserDefaults standardUserDefaults] synchronize];
+
+    //移除用户数据
+    [PFUserDefaults removeObjectForKey:@"string"];
+    [PFUserDefaults removeObjectForKey:@"array"];
+    [PFUserDefaults removeObjectForKey:@"dictionary"];
 
     NSLog(@"==========NSUserDefaults==========:%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"string"]);
     NSLog(@"==========NSUserDefaults==========:%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"array"]);
     NSLog(@"==========NSUserDefaults==========:%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"dictionary"]);
+
+    NSLog(@"==========PFUserDefaults==========:%@", [PFUserDefaults objectForKey:@"string"]);
+    NSLog(@"==========PFUserDefaults==========:%@", [PFUserDefaults objectForKey:@"array"]);
+    NSLog(@"==========PFUserDefaults==========:%@", [PFUserDefaults objectForKey:@"dictionary"]);
 }
 
 @end
