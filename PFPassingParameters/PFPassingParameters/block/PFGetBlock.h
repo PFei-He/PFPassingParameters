@@ -15,10 +15,10 @@ typedef void(^PFBlock)(NSString *string, NSArray *array, NSDictionary *dictionar
 
 @interface PFGetBlock : NSObject
 
-@property (nonatomic, strong) PFBlockWithString     stringBlock;
-@property (nonatomic, strong) PFBlockWithArray      arrayBlock;
-@property (nonatomic, strong) PFBlockWithDictionary dictionaryBlock;
-@property (nonatomic, strong) PFBlock               block;
+@property (nonatomic, copy) PFBlockWithString     stringBlock;
+@property (nonatomic, copy) PFBlockWithArray      arrayBlock;
+@property (nonatomic, copy) PFBlockWithDictionary dictionaryBlock;
+@property (nonatomic, copy) PFBlock               block;
 
 /**
  *  @brief 获取块
