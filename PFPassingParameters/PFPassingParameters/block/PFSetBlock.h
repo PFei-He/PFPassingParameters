@@ -10,14 +10,29 @@
 
 @interface PFSetBlock : NSObject
 
+/**
+ *  @brief 执行块
+ */
 - (void)setBlock;
 
-- (void)setBlockWithString:(void(^)(NSString *string))string;
+/**
+ *  @brief 块方法（string）
+ */
+- (void)setBlockWithString:(void(^)(NSString *string))block;
 
-- (void)setBlockWithArray:(void(^)(NSArray *array))array;
+/**
+ *  @brief 块方法（array）
+ */
+- (void)setBlockWithArray:(void(^)(NSArray *array))block;
 
-- (void)setBlockWithDictionary:(void(^)(NSDictionary *dictionary))dictionary;
+/**
+ *  @brief 块方法（dictionary）
+ */
+- (void)setBlockWithDictionary:(void(^)(NSDictionary *dictionary))block;
 
+/**
+ *  @brief 块方法（string, array, dictionary）
+ */
 - (void)setBlock:(void(^)(NSString *string, NSArray *array, NSDictionary *dictionary))block;
 
 @end

@@ -18,19 +18,13 @@
 //获取块
 - (void)getBlock
 {
-    if (self.stringBlock) {
-        self.stringBlock(@"string");
-    }
-    if (self.arrayBlock) {
-        self.arrayBlock(@[@"array"]);
-    }
-    if (self.dictionaryBlock) {
-        self.dictionaryBlock(@{@"key": @"object"});
-    }
-    if (self.block) {
-        self.block(@"string", @[@"array"], @{@"key": @"object"});
-    }
-    
+    //回调块
+    if (self.stringBlock)       self.stringBlock(@"string");
+    if (self.arrayBlock)        self.arrayBlock(@[@"array"]);
+    if (self.dictionaryBlock)   self.dictionaryBlock(@{@"key": @"object"});
+    if (self.block)             self.block(@"string", @[@"array"], @{@"key": @"object"});
+
+
     PFSetBlock *block = [[PFSetBlock alloc] init];
     
     [block setBlockWithString:^(NSString *string) {

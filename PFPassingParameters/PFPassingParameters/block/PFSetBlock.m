@@ -11,6 +11,7 @@
 
 @implementation PFSetBlock
 
+//执行块
 - (void)setBlock
 {
     PFGetBlock *get = [[PFGetBlock alloc] init];
@@ -29,42 +30,42 @@
     [get getBlock];
 }
 
-- (void)setBlockWithString:(void(^)(NSString *string))string
+//块方法（string）
+- (void)setBlockWithString:(void(^)(NSString *string))block
 {
     NSString *str = @"string";
-    
-    if (string) {
-        string(str);
-    }
+
+    //回调块
+    if (block) block(str);
 }
 
-- (void)setBlockWithArray:(void (^)(NSArray *))array
+//块方法（array）
+- (void)setBlockWithArray:(void (^)(NSArray *))block
 {
     NSArray *arr = @[@"array"];
-    
-    if (array) {
-        array(arr);
-    }
+
+    //回调块
+    if (block) block(arr);
 }
 
-- (void)setBlockWithDictionary:(void (^)(NSDictionary *))dictionary
+//块方法（dictionary）
+- (void)setBlockWithDictionary:(void (^)(NSDictionary *))block
 {
     NSDictionary *dic = @{@"key": @"object"};
-    
-    if (dictionary) {
-        dictionary(dic);
-    }
+
+    //回调块
+    if (block) block(dic);
 }
 
+//块方法（string, array, dictionary）
 - (void)setBlock:(void (^)(NSString *, NSArray *, NSDictionary *))block
 {
     NSString *str = @"string";
     NSArray *arr = @[@"array"];
     NSDictionary *dic = @{@"key": @"object"};
-    
-    if (block) {
-        block(str, arr, dic);
-    }
+
+    //回调块
+    if (block) block(str, arr, dic);
 }
 
 @end
