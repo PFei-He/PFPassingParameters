@@ -11,8 +11,11 @@
 @interface PFGetSingleton : NSObject
 
 /**
- * @brief 获取单例的实例方法
+ *  @brief 饮水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getSingleton;
+- (void)drink;
 
 @end

@@ -10,11 +10,11 @@
 
 @implementation PFSetNotification
 
-//设置通知
-- (void)setNotification
+//装水
+- (void)put
 {
-    //发送通知
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"NOTIFICATION" object:@"string"];
+    //通过广播告诉大家杯子都已经装满水
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"cup" object:@"water"];
 }
 
 @end

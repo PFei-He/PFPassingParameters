@@ -10,15 +10,16 @@
 
 @implementation PFGetNSUserDefaults
 
-//获取用户数据
-- (void)getNSUserDefaults
+//饮水
+- (void)drink
 {
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"string"]);
+    //获取装满水的杯子
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"cup"]);
 
-    //移除用户数据
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"string"];
+    //归还杯子（其实是毁掉）
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"cup"];
 
-    //同步用户数据
+    //记录事件
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

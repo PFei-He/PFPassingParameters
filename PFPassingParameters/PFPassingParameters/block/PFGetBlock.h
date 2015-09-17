@@ -8,15 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^PFBlock)();
-
 @interface PFGetBlock : NSObject
 
-@property (nonatomic, copy) PFBlock block;
-
 /**
- *  @brief 获取块
+ *  @brief 饮水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getBlock;
+- (void)drink;
 
 @end

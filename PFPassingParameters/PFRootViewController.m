@@ -32,6 +32,8 @@
 
 @implementation PFRootViewController
 
+#pragma mark - Lift Cycle
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -47,40 +49,42 @@
 
     
     PFGetBlock *getBlock = [[PFGetBlock alloc] init];
-    [getBlock getBlock];
+    [getBlock drink];
 
 
     PFGetDelegate *getDelegate = [[PFGetDelegate alloc] init];
-    [getDelegate getDelegate];
+    [getDelegate drink];
 
 
     PFSetExternVariables *setExternVariables = [[PFSetExternVariables alloc] init];
-    [setExternVariables setExternVariables];
+    [setExternVariables put];
     PFGetExternVariables *getExternVariables = [[PFGetExternVariables alloc] init];
-    [getExternVariables getExternVariables];
+    [getExternVariables drink];
 
 
     PFGetNotification *getNotification = [[PFGetNotification alloc] init];
-    [getNotification getNotification];
+    [getNotification wait];
     PFSetNotification *setNotification = [[PFSetNotification alloc] init];
-    [setNotification setNotification];
+    [setNotification put];
 
 
     PFSetNSUserDefaults *setNSUserDefaults = [[PFSetNSUserDefaults alloc] init];
-    [setNSUserDefaults setNSUserDefaults];
+    [setNSUserDefaults put];
     PFGetNSUserDefaults *getNSUserDefaults = [[PFGetNSUserDefaults alloc] init];
-    [getNSUserDefaults getNSUserDefaults];
+    [getNSUserDefaults drink];
 
 
     PFGetProperty *getProperty = [[PFGetProperty alloc] init];
-    [getProperty getProperty];
+    [getProperty drink];
 
 
     PFSetSingleton *setSingleton = [[PFSetSingleton alloc] init];
-    [setSingleton setSingleton];
+    [setSingleton put];
     PFGetSingleton *getSingleton = [[PFGetSingleton alloc] init];
-    [getSingleton getSingleton];
+    [getSingleton drink];
 }
+
+#pragma mark - Memory Management
 
 - (void)didReceiveMemoryWarning
 {

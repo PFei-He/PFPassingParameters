@@ -10,10 +10,11 @@
 
 @implementation PFSetProperty
 
-//设置属性
-- (void)setProperty
+//装水
+- (void)put
 {
-    self.string = @"string";
+    //给杯子里装水
+    self.cup = @"water";
 }
 
 @end

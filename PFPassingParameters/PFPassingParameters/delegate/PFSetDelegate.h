@@ -8,25 +8,33 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol PFDelegate;
+@class PFSetDelegate;
 
-@interface PFSetDelegate : NSObject
-
-@property (nonatomic, weak) id<PFDelegate> delegate;
-
-/**
- *  @brief 回调代理
- */
-- (void)callbackDelegate;
-
-@end
-
+//协议
 @protocol PFDelegate <NSObject>
 @required
 
 /**
- *  @brief 代理方法（string）
+ *  @brief 装水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)delegateMethod:(NSString *)string;
+- (void)put:(NSString *)water;
+
+@end
+
+@interface PFSetDelegate : NSObject
+
+//协议的签订人
+@property (nonatomic, weak) id<PFDelegate> delegate;
+
+/**
+ *  @brief 拿回协议
+ *  @param
+ *  @detail
+ *  @return
+ */
+- (void)callback;
 
 @end

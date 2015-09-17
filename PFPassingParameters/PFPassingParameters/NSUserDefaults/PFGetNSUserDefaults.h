@@ -11,8 +11,11 @@
 @interface PFGetNSUserDefaults : NSObject
 
 /**
- *  @brief 获取用户数据
+ *  @brief 饮水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getNSUserDefaults;
+- (void)drink;
 
 @end

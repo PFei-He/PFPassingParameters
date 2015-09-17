@@ -10,12 +10,12 @@
 
 @implementation PFSetDelegate
 
-//回调代理
-- (void)callbackDelegate
+//拿回协议
+- (void)callback
 {
-    //监听代理方法是否被实现，若实现则执行该代理方法
-    if ([self.delegate respondsToSelector:@selector(delegateMethod:)]) {
-        [self.delegate delegateMethod:@"string"];
+    //将水交出
+    if ([self.delegate respondsToSelector:@selector(put:)]) {
+        [self.delegate put:@"water"];
     }
 }
 

@@ -8,15 +8,15 @@
 
 #import "PFGetExternVariables.h"
 
-//外部变量
-extern const NSString     *string;
+///拿到公用的杯子
+extern const NSString *cup;
 
 @implementation PFGetExternVariables
 
-//获取外部变量
-- (void)getExternVariables
+//饮水
+- (void)drink
 {
-    NSLog(@"%@", string);
+    NSLog(@"%@", cup);
 }
 
 @end

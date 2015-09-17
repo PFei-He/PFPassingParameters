@@ -11,8 +11,11 @@
 @interface PFSetNSUserDefaults : NSObject
 
 /**
- *  @brief 设置用户数据
+ *  @brief 装水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)setNSUserDefaults;
+- (void)put;
 
 @end

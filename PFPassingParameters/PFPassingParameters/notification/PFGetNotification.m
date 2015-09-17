@@ -10,22 +10,22 @@
 
 @implementation PFGetNotification
 
-//获取通知
-- (void)getNotification
+//等待茶水间发来消息
+- (void)wait
 {
-    //注册监听者（必须先注册监听者，再传值）
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:@"string" object:nil];
+    //打开广播，收听茶水间发来的消息
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getCup:) name:@"string" object:nil];
 }
 
-//管理通知
-- (void)handleNotification:(NSNotification *)notification
+//到茶水间拿回装满水的杯子
+- (void)getCup:(NSNotification *)cup
 {
-    NSLog(@"%@", notification.object);
+    NSLog(@"%@", cup.object);
 }
 
 - (void)dealloc
 {
-    //移除通知
+    //关闭广播
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 

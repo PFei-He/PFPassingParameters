@@ -10,22 +10,21 @@
 
 @implementation PFGetDelegate
 
-//获取代理
-- (void)getDelegate
+//饮水
+- (void)drink
 {
-    PFSetDelegate *set = [[PFSetDelegate alloc] init];
+    //找到管理员并与其签订租用协议
+    PFSetDelegate *manager = [[PFSetDelegate alloc] init];
+    manager.delegate = self;
     
-    //设置代理
-    set.delegate = self;
-    
-    //代理回调
-    [set callbackDelegate];
+    //交回协议
+    [manager callback];
 }
 
-//代理方法（string）
-- (void)delegateMethod:(NSString *)string
+//装水
+- (void)put:(NSString *)water
 {
-    NSLog(@"%@", string);
+    NSLog(@"%@", water);
 }
 
 @end

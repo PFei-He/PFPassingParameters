@@ -10,13 +10,13 @@
 
 @implementation PFSetNSUserDefaults
 
-//设置用户数据
-- (void)setNSUserDefaults
+//装水
+- (void)put
 {
-    //添加用户数据
-    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"string"] forKey:@"string"];
+    //给杯子里装水
+    [[NSUserDefaults standardUserDefaults] setObject:[NSString stringWithFormat:@"water"] forKey:@"cup"];
     
-    //同步用户数据
+    //记录事件
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

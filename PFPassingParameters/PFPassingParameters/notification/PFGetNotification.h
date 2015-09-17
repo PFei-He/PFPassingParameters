@@ -11,8 +11,11 @@
 @interface PFGetNotification : NSObject
 
 /**
- *  @brief 获取通知
+ *  @brief 等待茶水间发来消息
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getNotification;
+- (void)wait;
 
 @end

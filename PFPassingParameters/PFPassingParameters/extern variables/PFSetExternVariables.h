@@ -8,14 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-//外部变量
-const NSString *string;
+///找出公用的杯子
+const NSString *cup;
 
 @interface PFSetExternVariables : NSObject
 
 /**
- *  @brief 设置外部变量
+ *  @brief 装水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)setExternVariables;
+- (void)put;
 
 @end

@@ -11,8 +11,11 @@
 @interface PFSetBlock : NSObject
 
 /**
- *  @brief 块方法（string）
+ *  @brief 装水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)blockMethod:(void(^)(NSString *string))block;
+- (void)put:(void(^)(NSString *water))cup;
 
 @end

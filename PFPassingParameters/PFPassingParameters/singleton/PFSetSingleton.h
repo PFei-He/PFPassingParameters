@@ -10,19 +10,19 @@
 
 @interface PFSetSingleton : NSObject
 
-///
+///茶水间的杯子（只有唯一一个）
 @property (nonatomic, copy) NSString *string;
 
 /**
- *  @brief
+ *  @brief 装水
  *  @param
  *  @detail
  *  @return
  */
-- (void)setSingleton;
+- (void)put;
 
 /**
- *  @brief
+ *  @brief 拿出杯子
  *  @param
  *  @detail
  *  @return

@@ -11,11 +11,11 @@
 
 @implementation PFSetBlock
 
-//块方法（string）
-- (void)blockMethod:(void(^)(NSString *string))block
+//装水
+- (void)put:(void(^)(NSString *))cup
 {
-    //回调块
-    if (block) block(@"string");
+    //如果拿到杯子，就给杯子里装水
+    if (cup) cup(@"water");
 }
 
 @end

@@ -11,12 +11,15 @@
 
 @implementation PFGetBlock
 
-//获取块
-- (void)getBlock
+//饮水
+- (void)drink
 {
-    PFSetBlock *block = [[PFSetBlock alloc] init];
-    [block blockMethod:^(NSString *string) {
-        NSLog(@"%@", string);
+    //找到管理员
+    PFSetBlock *manager = [[PFSetBlock alloc] init];
+    
+    //交出自己的杯子给管理员，并让他装水，装好后拿回来
+    [manager put:^(NSString *water) {
+        NSLog(@"%@", water);
     }];
 }
 

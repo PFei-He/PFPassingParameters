@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "PFSetDelegate.h"
 
-@interface PFGetDelegate : NSObject <PFDelegate>
+@interface PFGetDelegate : NSObject <PFDelegate /*需要签注的租用协议*/>
 
 /**
- *  @brief 获取代理
+ *  @brief 饮水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getDelegate;
+- (void)drink;
 
 @end

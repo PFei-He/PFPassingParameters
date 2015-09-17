@@ -11,8 +11,11 @@
 @interface PFSetNotification : NSObject
 
 /**
- *  @brief 设置通知
+ *  @brief 装水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)setNotification;
+- (void)put;
 
 @end

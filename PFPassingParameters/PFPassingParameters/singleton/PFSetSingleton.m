@@ -10,10 +10,10 @@
 
 @implementation PFSetSingleton
 
-//设置单例
-- (void)setSingleton
+//装水
+- (void)put
 {
-    //全局变量的调用方法
+    //给杯子里装水
     [PFSetSingleton sharedInstance].string = @"string";
 }
 

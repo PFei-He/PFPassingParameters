@@ -11,8 +11,11 @@
 @interface PFGetProperty : NSObject
 
 /**
- *  @brief 获取属性
+ *  @brief 饮水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getProperty;
+- (void)drink;
 
 @end

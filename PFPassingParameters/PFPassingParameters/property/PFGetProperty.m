@@ -11,13 +11,15 @@
 
 @implementation PFGetProperty
 
-//获取属性
-- (void)getProperty
+//饮水
+- (void)drink
 {
-    PFSetProperty *set = [[PFSetProperty alloc] init];
-    [set setProperty];
+    //找到管理员并让它装水
+    PFSetProperty *manager = [[PFSetProperty alloc] init];
+    [manager put];
     
-    NSLog(@"%@", set.string);
+    //获取装满水的杯子
+    NSLog(@"%@", manager.cup);
 }
 
 @end

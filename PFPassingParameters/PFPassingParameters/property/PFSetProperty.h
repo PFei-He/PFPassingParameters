@@ -10,11 +10,15 @@
 
 @interface PFSetProperty : NSObject
 
-@property (nonatomic, copy) NSString *string;
+///茶水间的杯子
+@property (nonatomic, copy) NSString *cup;
 
 /**
- *  @brief 设置属性
+ *  @brief 装水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)setProperty;
+- (void)put;
 
 @end

@@ -11,10 +11,10 @@
 
 @implementation PFGetSingleton
 
-//获取单例的实例方法
-- (void)getSingleton
+//饮水
+- (void)drink
 {
-    //调用单例的属性
+    //获取装满水的杯子
     NSLog(@"%@", [PFSetSingleton sharedInstance].string);
 }
 

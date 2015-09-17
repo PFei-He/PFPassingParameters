@@ -11,8 +11,11 @@
 @interface PFGetExternVariables : NSObject
 
 /**
- *  @brief 获取外部变量
+ *  @brief 饮水
+ *  @param
+ *  @detail
+ *  @return
  */
-- (void)getExternVariables;
+- (void)drink;
 
 @end

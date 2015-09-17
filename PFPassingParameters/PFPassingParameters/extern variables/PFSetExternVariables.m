@@ -10,11 +10,11 @@
 
 @implementation PFSetExternVariables
 
-//设置外部变量
-- (void)setExternVariables
+//装水
+- (void)put
 {
-    //添加外部变量的参数
-    string = @"string";
+    //给杯子里装水
+    cup = @"water";
 }
 
 @end
