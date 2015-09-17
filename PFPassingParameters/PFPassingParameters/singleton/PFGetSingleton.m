@@ -5,57 +5,35 @@
 //  Created by PFei_He on 14-6-27.
 //  Copyright (c) 2014年 PFei_He. All rights reserved.
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 #import "PFGetSingleton.h"
-#import "PFSingleton.h"
-#import "PFSingletonWithMarco.h"
+#import "PFSetSingleton.h"
 
 @implementation PFGetSingleton
 
 //获取单例的实例方法
 - (void)getSingleton
 {
-    //调用单例的全局变量
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance]->string);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance]->array);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance]->dictionary);
-
-    //调用单例的属性
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance].string);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance].array);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance].dictionary);
-
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].str);
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].mutableStr);
-
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].arr);
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].mutableArr);
-
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].dic);
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].mutableDic);
-}
-
-//获取单例的类方法
-+ (void)getSingleton
-{
-    //调用单例的全局变量
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance]->string);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance]->array);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance]->dictionary);
-
-    //调用单例的属性
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance].string);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance].array);
-    NSLog(@"==========singleton==========:%@", [PFSingleton sharedInstance].dictionary);
-
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].str);
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].mutableStr);
-
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].arr);
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].mutableArr);
-
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].dic);
-    NSLog(@"==========singleton==========:%@", [PFSingletonWithMarco sharedInstance].mutableDic);
+    //饮水
+    NSLog(@"%@", [PFSetSingleton sharedInstance].string);
 }
 
 @end

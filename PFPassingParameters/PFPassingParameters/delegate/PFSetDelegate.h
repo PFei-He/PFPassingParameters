@@ -8,14 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+//租借协议
 @protocol PFDelegate;
 
 @interface PFSetDelegate : NSObject
 
+//签订人
 @property (nonatomic, weak) id<PFDelegate> delegate;
 
 /**
  *  @brief 回调代理
+ *  @param
+ *  @detail 这个可看作是管理员拿回已经签订的协议
+ *  @return
  */
 - (void)callbackDelegate;
 
@@ -23,27 +28,12 @@
 
 @protocol PFDelegate <NSObject>
 
-@required
-//@optional
-
 /**
- *  @brief 代理方法（string）
+ *  @brief 代理方法
+ *  @param
+ *  @detail 这个是口渴者拿回饮品的过程
+ *  @return
  */
-- (void)setDelegateWithString:(NSString *)string;
-
-/**
- *  @brief 代理方法（array）
- */
-- (void)setDelegateWithArray:(NSArray *)array;
-
-/**
- *  @brief 代理方法（dictionary）
- */
-- (void)setDelegateWithDictionary:(NSDictionary *)dictionary;
-
-/**
- *  @brief 代理方法（string, array, dictionary）
- */
-- (void)setDelegateWithString:(NSString *)string array:(NSArray *)array dictionary:(NSDictionary *)dictionary;
+- (void)setDelegate:(NSString *)string;
 
 @end

@@ -37,8 +37,6 @@
 		CEFAF187196169FA0088CD1D /* PFSetProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF170196169FA0088CD1D /* PFSetProperty.m */; };
 		CEFAF188196169FA0088CD1D /* PFGetSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF173196169FA0088CD1D /* PFGetSingleton.m */; };
 		CEFAF189196169FA0088CD1D /* PFSetSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF175196169FA0088CD1D /* PFSetSingleton.m */; };
-		CEFAF18A196169FA0088CD1D /* PFSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF177196169FA0088CD1D /* PFSingleton.m */; };
-		CEFAF18B196169FA0088CD1D /* PFSingletonWithMarco.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFAF179196169FA0088CD1D /* PFSingletonWithMarco.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,10 +102,6 @@
 		CEFAF173196169FA0088CD1D /* PFGetSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFGetSingleton.m; sourceTree = "<group>"; };
 		CEFAF174196169FA0088CD1D /* PFSetSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSetSingleton.h; sourceTree = "<group>"; };
 		CEFAF175196169FA0088CD1D /* PFSetSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSetSingleton.m; sourceTree = "<group>"; };
-		CEFAF176196169FA0088CD1D /* PFSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSingleton.h; sourceTree = "<group>"; };
-		CEFAF177196169FA0088CD1D /* PFSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSingleton.m; sourceTree = "<group>"; };
-		CEFAF178196169FA0088CD1D /* PFSingletonWithMarco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSingletonWithMarco.h; sourceTree = "<group>"; };
-		CEFAF179196169FA0088CD1D /* PFSingletonWithMarco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSingletonWithMarco.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,10 +294,6 @@
 				CEFAF173196169FA0088CD1D /* PFGetSingleton.m */,
 				CEFAF174196169FA0088CD1D /* PFSetSingleton.h */,
 				CEFAF175196169FA0088CD1D /* PFSetSingleton.m */,
-				CEFAF176196169FA0088CD1D /* PFSingleton.h */,
-				CEFAF177196169FA0088CD1D /* PFSingleton.m */,
-				CEFAF178196169FA0088CD1D /* PFSingletonWithMarco.h */,
-				CEFAF179196169FA0088CD1D /* PFSingletonWithMarco.m */,
 			);
 			path = singleton;
 			sourceTree = "<group>";
@@ -409,7 +399,6 @@
 				CEFAF17B196169FA0088CD1D /* PFSetBlock.m in Sources */,
 				CEFAF183196169FA0088CD1D /* PFSetNotification.m in Sources */,
 				CEFAF187196169FA0088CD1D /* PFSetProperty.m in Sources */,
-				CEFAF18B196169FA0088CD1D /* PFSingletonWithMarco.m in Sources */,
 				CEFAF186196169FA0088CD1D /* PFGetProperty.m in Sources */,
 				CEFAF12D196169780088CD1D /* AppDelegate.m in Sources */,
 				CEFAF188196169FA0088CD1D /* PFGetSingleton.m in Sources */,
@@ -418,7 +407,6 @@
 				CEFAF17D196169FA0088CD1D /* PFSetDelegate.m in Sources */,
 				CEFAF14D1961699F0088CD1D /* PFRootViewController.m in Sources */,
 				CEFAF185196169FA0088CD1D /* PFSetNSUserDefaults.m in Sources */,
-				CEFAF18A196169FA0088CD1D /* PFSingleton.m in Sources */,
 				CEFAF182196169FA0088CD1D /* PFNotificationWithMarco.m in Sources */,
 				CEFAF17E196169FA0088CD1D /* PFGetExternVariables.m in Sources */,
 				CEFAF17F196169FA0088CD1D /* PFSetExternVariables.m in Sources */,

@@ -11,28 +11,11 @@
 @interface PFSetBlock : NSObject
 
 /**
- *  @brief 执行块
+ *  @brief 设置代码块
+ *  @param
+ *  @detail 这个是茶水间管理员给杯子倒水的过程
+ *  @return
  */
-- (void)setBlock;
-
-/**
- *  @brief 块方法（string）
- */
-- (void)setBlockWithString:(void(^)(NSString *string))block;
-
-/**
- *  @brief 块方法（array）
- */
-- (void)setBlockWithArray:(void(^)(NSArray *array))block;
-
-/**
- *  @brief 块方法（dictionary）
- */
-- (void)setBlockWithDictionary:(void(^)(NSDictionary *dictionary))block;
-
-/**
- *  @brief 块方法（string, array, dictionary）
- */
-- (void)setBlock:(void(^)(NSString *string, NSArray *array, NSDictionary *dictionary))block;
+- (void)setBlock:(void(^)(NSString *string))block;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "PFRootViewController.h"
 
-#import "PFSetBlock.h"
+#import "PFGetBlock.h"
 
 #import "PFGetDelegate.h"
 
@@ -46,8 +46,8 @@
     [super viewDidLoad];
 
     
-    PFSetBlock *setBlock = [[PFSetBlock alloc] init];
-    [setBlock setBlock];
+    PFGetBlock *getBlock = [[PFGetBlock alloc] init];
+    [getBlock getBlock];
 
 
     PFGetDelegate *getDelegate = [[PFGetDelegate alloc] init];

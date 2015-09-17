@@ -5,34 +5,72 @@
 //  Created by PFei_He on 14-6-27.
 //  Copyright (c) 2014年 PFei_He. All rights reserved.
 //
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
+//
 
 #import "PFSetSingleton.h"
-#import "PFSingleton.h"
-#import "PFSingletonWithMarco.h"
 
 @implementation PFSetSingleton
 
 //设置单例
 - (void)setSingleton
 {
-    //全局变量的调用方法
-    [PFSingleton sharedInstance]->string        = @"string";
-    [PFSingleton sharedInstance]->array         = @[@"array"];
-    [PFSingleton sharedInstance]->dictionary    = @{@"key": @"object"};
+    //给杯子倒水
+    [PFSetSingleton sharedInstance].string = @"string";
+}
 
-    //属性的调用方法
-    [PFSingleton sharedInstance].string         = @"string";
-    [PFSingleton sharedInstance].array          = @[@"array"];
-    [PFSingleton sharedInstance].dictionary     = @{@"key": @"object"};
+/*
+//普通单例
++ (PFSetSingleton *)sharedInstance
+{
+    static PFSetSingleton *sharedInstance = nil;
+    if (!sharedInstance) {
+        sharedInstance = [[self alloc] init];
+    }
+    return sharedInstance;
+}
+*/
 
-    [PFSingletonWithMarco sharedInstance].str = @"123";
-    [PFSingletonWithMarco sharedInstance].mutableStr = [NSMutableString stringWithString:@"123"];
+/*
+//GCD线程单例
++ (PFSetSingleton *)sharedInstance
+{
+    static PFSetSingleton *sharedInstance = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
+*/
 
-    [PFSingletonWithMarco sharedInstance].arr = @[@"123", @"456", @"789"];
-    [PFSingletonWithMarco sharedInstance].mutableArr = [NSMutableArray arrayWithArray:@[@"123", @"456", @"789"]];
-
-    [PFSingletonWithMarco sharedInstance].dic = @{@"first": @"123", @"second": @"456", @"third": @"789"};
-    [PFSingletonWithMarco sharedInstance].mutableDic = [NSMutableDictionary dictionaryWithDictionary:@{@"first": @"123", @"second": @"456", @"third": @"789"}];
+//同步锁单例
++ (PFSetSingleton *)sharedInstance
+{
+    static PFSetSingleton *sharedInstance = nil;
+    @synchronized(self)
+    {
+        if (!sharedInstance) {
+            sharedInstance = [[self alloc] init];
+        }
+        return sharedInstance;
+    }
 }
 
 @end

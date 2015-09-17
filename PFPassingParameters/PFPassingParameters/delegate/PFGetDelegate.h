@@ -13,6 +13,9 @@
 
 /**
  *  @brief 获取代理
+ *  @param
+ *  @detail
+ *  @return
  */
 - (void)getDelegate;
 
