@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PFNotification.h"
 
 @interface PFSetNotification : NSObject
 

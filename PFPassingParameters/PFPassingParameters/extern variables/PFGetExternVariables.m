@@ -10,17 +10,13 @@
 
 //外部变量
 extern const NSString     *string;
-extern const NSArray      *array;
-extern const NSDictionary *dictionary;
 
 @implementation PFGetExternVariables
 
 //获取外部变量
 - (void)getExternVariables
 {
-    NSLog(@"==========extern variables==========:%@", string);
-    NSLog(@"==========extern variables==========:%@", array);
-    NSLog(@"==========extern variables==========:%@", dictionary);
+    NSLog(@"%@", string);
 }
 
 @end

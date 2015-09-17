@@ -10,9 +10,7 @@
 
 @interface PFSetProperty : NSObject
 
-@property (nonatomic, copy)     NSString        *string;
-@property (nonatomic, strong)   NSArray         *array;
-@property (nonatomic, strong)   NSDictionary    *dictionary;
+@property (nonatomic, copy) NSString *string;
 
 /**
  *  @brief 设置属性

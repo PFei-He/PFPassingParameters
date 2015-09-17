@@ -10,16 +10,10 @@
 
 @implementation PFSetProperty
 
-@synthesize string      = _string;
-@synthesize array       = _array;
-@synthesize dictionary  = _dictionary;
-
 //设置属性
 - (void)setProperty
 {
-    self.string     = @"string";
-    self.array      = @[@"array"];
-    self.dictionary = @{@"key": @"object"};
+    self.string = @"string";
 }
 
 @end

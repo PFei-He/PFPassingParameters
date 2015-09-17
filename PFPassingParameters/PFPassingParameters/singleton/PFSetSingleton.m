@@ -7,8 +7,6 @@
 //
 
 #import "PFSetSingleton.h"
-#import "PFSingleton.h"
-#import "PFSingletonWithMarco.h"
 
 @implementation PFSetSingleton
 
@@ -16,23 +14,45 @@
 - (void)setSingleton
 {
     //全局变量的调用方法
-    [PFSingleton sharedInstance]->string        = @"string";
-    [PFSingleton sharedInstance]->array         = @[@"array"];
-    [PFSingleton sharedInstance]->dictionary    = @{@"key": @"object"};
+    [PFSetSingleton sharedInstance].string = @"string";
+}
 
-    //属性的调用方法
-    [PFSingleton sharedInstance].string         = @"string";
-    [PFSingleton sharedInstance].array          = @[@"array"];
-    [PFSingleton sharedInstance].dictionary     = @{@"key": @"object"};
+/*
+//普通单例
++ (PFSetSingleton *)sharedInstance
+{
+    static PFSetSingleton *sharedInstance = nil;
+    if (!sharedInstance) {
+        sharedInstance = [[self alloc] init];
+    }
+    return sharedInstance;
+}
+*/
 
-    [PFSingletonWithMarco sharedInstance].str = @"123";
-    [PFSingletonWithMarco sharedInstance].mutableStr = [NSMutableString stringWithString:@"123"];
+/*
+//GCD线程单例
++ (PFSetSingleton *)sharedInstance
+{
+    static PFSetSingleton *sharedInstance = nil;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
+*/
 
-    [PFSingletonWithMarco sharedInstance].arr = @[@"123", @"456", @"789"];
-    [PFSingletonWithMarco sharedInstance].mutableArr = [NSMutableArray arrayWithArray:@[@"123", @"456", @"789"]];
-
-    [PFSingletonWithMarco sharedInstance].dic = @{@"first": @"123", @"second": @"456", @"third": @"789"};
-    [PFSingletonWithMarco sharedInstance].mutableDic = [NSMutableDictionary dictionaryWithDictionary:@{@"first": @"123", @"second": @"456", @"third": @"789"}];
+//同步锁单例
++ (PFSetSingleton *)sharedInstance
+{
+    static PFSetSingleton *sharedInstance = nil;
+    
+    @synchronized(self) {
+        if (!sharedInstance) {
+            sharedInstance = [[self alloc] init];
+        }
+        return sharedInstance;
+    }
 }
 
 @end

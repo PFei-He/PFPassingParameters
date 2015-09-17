@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 
 //外部变量
-const NSString     *string;
-const NSArray      *array;
-const NSDictionary *dictionary;
+const NSString *string;
 
 @interface PFSetExternVariables : NSObject
 

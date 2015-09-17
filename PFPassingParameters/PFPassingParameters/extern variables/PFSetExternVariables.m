@@ -14,9 +14,7 @@
 - (void)setExternVariables
 {
     //添加外部变量的参数
-    string      = @"string";
-    array       = @[@"array"];
-    dictionary  = @{@"key": @"object"};
+    string = @"string";
 }
 
 @end

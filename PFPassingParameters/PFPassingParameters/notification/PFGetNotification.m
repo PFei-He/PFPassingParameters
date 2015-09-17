@@ -7,7 +7,6 @@
 //
 
 #import "PFGetNotification.h"
-#import "PFNotification.h"
 
 @implementation PFGetNotification
 
@@ -15,21 +14,19 @@
 - (void)getNotification
 {
     //注册监听者（必须先注册监听者，再传值）
-    [PFNotification addObserver:self selector:@selector(handleNotification:) name:@"string"];
-    [PFNotification addObserver:self selector:@selector(handleNotification:) name:@"array"];
-    [PFNotification addObserver:self selector:@selector(handleNotification:) name:@"dictionary"];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:@"string" object:nil];
 }
 
 //管理通知
 - (void)handleNotification:(NSNotification *)notification
 {
-    NSLog(@"==========notification==========:%@", notification.object);
+    NSLog(@"%@", notification.object);
 }
 
 - (void)dealloc
 {
     //移除通知
-    [PFNotification removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

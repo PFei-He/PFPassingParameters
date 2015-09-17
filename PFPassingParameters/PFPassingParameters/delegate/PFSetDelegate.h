@@ -22,28 +22,11 @@
 @end
 
 @protocol PFDelegate <NSObject>
-
 @required
-//@optional
 
 /**
  *  @brief 代理方法（string）
  */
-- (void)setDelegateWithString:(NSString *)string;
-
-/**
- *  @brief 代理方法（array）
- */
-- (void)setDelegateWithArray:(NSArray *)array;
-
-/**
- *  @brief 代理方法（dictionary）
- */
-- (void)setDelegateWithDictionary:(NSDictionary *)dictionary;
-
-/**
- *  @brief 代理方法（string, array, dictionary）
- */
-- (void)setDelegateWithString:(NSString *)string array:(NSArray *)array dictionary:(NSDictionary *)dictionary;
+- (void)delegateMethod:(NSString *)string;
 
 @end

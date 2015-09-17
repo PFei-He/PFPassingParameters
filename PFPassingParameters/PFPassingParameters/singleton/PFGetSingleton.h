@@ -15,9 +15,4 @@
  */
 - (void)getSingleton;
 
-/**
- * @brief 获取单例的类方法
- */
-+ (void)getSingleton;
-
 @end

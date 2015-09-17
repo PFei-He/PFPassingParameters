@@ -23,27 +23,9 @@
 }
 
 //代理方法（string）
-- (void)setDelegateWithString:(NSString *)string
+- (void)delegateMethod:(NSString *)string
 {
-    NSLog(@"==========delegate==========:%@", string);
-}
-
-//代理方法（array）
-- (void)setDelegateWithArray:(NSArray *)array
-{
-    NSLog(@"==========delegate==========:%@", array);
-}
-
-//代理方法（dictionary）
-- (void)setDelegateWithDictionary:(NSDictionary *)dictionary
-{
-    NSLog(@"==========delegate==========:%@", dictionary);
-}
-
-//代理方法（string, array, dictionary）
-- (void)setDelegateWithString:(NSString *)string array:(NSArray *)array dictionary:(NSDictionary *)dictionary
-{
-    NSLog(@"==========delegate==========:%@\n%@\n%@", string, array, dictionary);
+    NSLog(@"%@", string);
 }
 
 @end

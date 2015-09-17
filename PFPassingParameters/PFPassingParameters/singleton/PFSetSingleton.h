@@ -10,9 +10,23 @@
 
 @interface PFSetSingleton : NSObject
 
+///
+@property (nonatomic, copy) NSString *string;
+
 /**
- *  @brief 设置单例
+ *  @brief
+ *  @param
+ *  @detail
+ *  @return
  */
 - (void)setSingleton;
+
+/**
+ *  @brief
+ *  @param
+ *  @detail
+ *  @return
+ */
++ (PFSetSingleton *)sharedInstance;
 
 @end

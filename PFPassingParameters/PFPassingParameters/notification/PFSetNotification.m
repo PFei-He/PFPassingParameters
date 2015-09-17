@@ -14,14 +14,7 @@
 - (void)setNotification
 {
     //发送通知
-    NSString *string = @"string";
-    [PFNotification postNotificationName:@"string" object:string];
-    
-    NSArray *array = @[@"array"];
-    [PFNotification postNotificationName:@"array" object:array];
-    
-    NSDictionary *dictionary = @{@"key": @"object"};
-    [PFNotification postNotificationName:@"dictionary" object:dictionary];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"NOTIFICATION" object:@"string"];
 }
 
 @end

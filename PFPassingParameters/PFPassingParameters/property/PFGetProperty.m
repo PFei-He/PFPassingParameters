@@ -16,9 +16,8 @@
 {
     PFSetProperty *set = [[PFSetProperty alloc] init];
     [set setProperty];
-    NSLog(@"==========property==========:%@", set.string);
-    NSLog(@"==========property==========:%@", set.array);
-    NSLog(@"==========property==========:%@", set.dictionary);
+    
+    NSLog(@"%@", set.string);
 }
 
 @end
