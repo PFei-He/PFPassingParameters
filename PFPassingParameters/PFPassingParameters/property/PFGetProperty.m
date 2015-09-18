@@ -32,7 +32,7 @@
 //饮水
 - (void)drink
 {
-    //找到管理员并让它装水
+    //找到管理员并装水
     PFSetProperty *manager = [[PFSetProperty alloc] init];
     [manager put];
     
